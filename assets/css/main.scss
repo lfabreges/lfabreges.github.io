@@ -11,6 +11,39 @@ $right-sidebar-width: 0px;
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
+html {
+  font-size: $type-size-4;
+  @include breakpoint($medium) {
+    font-size: $type-size-4;
+  }
+  @include breakpoint($large) {
+    font-size: $type-size-4;
+  }
+  @include breakpoint($x-large) {
+    font-size: $type-size-4;
+  }
+}
+
+.archive__item-excerpt {
+  font-size: $type-size-5;
+}
+
+.layout--home {
+  .entries-list {
+    article:first-of-type {
+      .archive__item-title {
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+.list__item {
+  .page__meta {
+    font-size: $type-size-6;
+  }
+}
+
 .page__date {
   display: none;
 }
