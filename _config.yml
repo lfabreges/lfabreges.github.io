@@ -38,7 +38,6 @@ defaults:
       read_time: true
       related: true
       share: true
-      show_date: true
   - scope:
       path: "_pages"
       type: pages
