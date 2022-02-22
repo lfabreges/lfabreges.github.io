@@ -1,0 +1,9 @@
+main:
+  - title: "Billets"
+    url: /posts/
+  - title: "Catégories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+  - title: "À propos"
+    url: /about/

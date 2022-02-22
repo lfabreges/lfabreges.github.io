@@ -1,0 +1,12 @@
+---
+---
+
+@charset "utf-8";
+
+$intro-transition: none;
+$global-transition: none;
+$right-sidebar-width-narrow: 0px;
+$right-sidebar-width: 0px;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
