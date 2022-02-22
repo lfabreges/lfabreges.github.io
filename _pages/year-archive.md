@@ -1,5 +1,5 @@
 ---
-title: "Billets par année"
+title: "Archives"
 permalink: /posts/
 layout: posts
 ---

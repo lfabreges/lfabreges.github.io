@@ -1,5 +1,5 @@
 ---
-title: "Billets par tag"
+title: "Tags"
 permalink: /tags/
 layout: tags
 ---

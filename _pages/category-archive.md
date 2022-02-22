@@ -1,5 +1,5 @@
 ---
-title: "Billets par catégorie"
+title: "Catégories"
 layout: categories
 permalink: /categories/
 ---

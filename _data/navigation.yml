@@ -1,9 +1,7 @@
 main:
-  - title: "Billets"
+  - title: "Archives"
     url: /posts/
   - title: "Catégories"
     url: /categories/
   - title: "Tags"
     url: /tags/
-  - title: "À propos"
-    url: /about/
