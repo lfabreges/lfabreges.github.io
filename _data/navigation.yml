@@ -1,7 +1,3 @@
 main:
   - title: "Archives"
     url: /posts/
-  - title: "Catégories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/

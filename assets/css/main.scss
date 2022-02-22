@@ -24,6 +24,12 @@ html {
   }
 }
 
+.archive {
+  .taxonomy__index {
+    font-size: $type-size-5;
+  }
+}
+
 .archive__item-excerpt {
   font-size: $type-size-5;
 }
