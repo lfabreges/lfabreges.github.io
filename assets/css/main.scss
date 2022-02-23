@@ -35,6 +35,10 @@ html {
 }
 
 .layout--home {
+  .archive {
+    margin-top: 0;
+  }
+
   .entries-list {
     article:first-of-type {
       .archive__item-title {
