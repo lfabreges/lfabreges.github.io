@@ -35,10 +35,6 @@ html {
 }
 
 .layout--home {
-  .archive {
-    margin-top: 0;
-  }
-
   .entries-list {
     article:first-of-type {
       .archive__item-title {
@@ -60,6 +56,10 @@ html {
 
 .page__footer-copyright {
   margin-bottom: 0.5ex;
+}
+
+.page__hero, .page__hero--overlay {
+  margin-bottom: 1em;
 }
 
 .search-content__form {
