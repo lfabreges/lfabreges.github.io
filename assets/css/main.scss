@@ -36,7 +36,7 @@ html {
 
 .layout--home {
   .entries-list {
-    article:first-of-type {
+    .list__item:first-child {
       .archive__item-title {
         margin-top: 0px;
       }
