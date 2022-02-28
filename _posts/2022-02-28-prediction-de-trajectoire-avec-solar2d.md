@@ -4,7 +4,7 @@ date: 2022-02-28
 tags: [Solar2D]
 title: "Prédiction de trajectoire avec Solar2D"
 ---
-Je créer en ce moment un jeu avec mon fils en m'appuyant sur [Solar 2D](https://solar2d.com/) ; un jeu pour
+Je crée en ce moment un jeu avec mon fils en m'appuyant sur [Solar 2D](https://solar2d.com/) ; un jeu pour
 l'instant simple dans lequel il est possible de lancer un projectile en ajustant son coup au préalable,
 à l'instar du lancé de pigeon dans un jeu comme Angry Birds. J'ai ajouté une prédiction de
 trajectoire en partant du [tutorial existant](https://docs.coronalabs.com/tutorial/games/predictTrajectory/index.html)

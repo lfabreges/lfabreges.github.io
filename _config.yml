@@ -1,5 +1,7 @@
 title: Foukous
-description:
+
+twitter:
+  username: "lfabreges"
 
 date_format: "%d/%m/%Y"
 locale: fr
@@ -62,7 +64,6 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-paginate
-  - jekyll-seo-tag
   - jekyll-sitemap
 
 category_archive:
