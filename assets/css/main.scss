@@ -34,6 +34,17 @@ html {
   font-size: $type-size-5;
 }
 
+.feature__wrapper {
+  .archive__item-teaser {
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+    }
+  }
+}
+
 .layout--home {
   .entries-list {
     .list__item:first-child {
