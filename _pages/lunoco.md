@@ -45,8 +45,8 @@ title: "Lunoco"
 
 # Confidentialité
 Lunoco ne collecte aucune donnée
-{: .notice--success style="margin: 0 0 1.3em 0 !important;"}
+{: .notice--success style="margin: 0 0 2em 0 !important;"}
 
 # Assistance
 Utilisez les commentaires ci-dessous pour vos demandes d'assistance
-{: .notice--info style="margin: 0 0 1.3em 0 !important;"}
+{: .notice--info style="margin: 0 0 1em 0 !important;"}
