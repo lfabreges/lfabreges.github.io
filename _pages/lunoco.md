@@ -5,6 +5,7 @@ feature_row:
     excerpt: >
       Lancez la balle pour détruire toutes les cibles en un minimum de coups jusqu'à obtenir 3 étoiles
       dans chacun des niveaux du jeu. Attention, certaines cibles sont plus résistantes que d'autres&nbsp;!
+      <br/>
       [![Télécharger dans l'App Store](https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/fr-fr?size=250x83&amp;releaseDate=1649635200&h=7c7d920eb9b923d743298890a4f54d9c){: .app-store-img}](https://apps.apple.com/fr/app/lunoco/id1615060601?itsct=apps_box_badge&amp;itscg=30200)
     image_path: /assets/lunoco/game.png
     title: "Détruisez toutes les cibles&nbsp;!"
