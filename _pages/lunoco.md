@@ -49,4 +49,4 @@ Lunoco ne collecte aucune donnée
 
 # Assistance
 Utilisez les commentaires ci-dessous pour vos demandes d'assistance
-{: .notice--info style="margin: 0 0 1em 0 !important;"}
+{: .notice--info style="margin: 0 0 1ex 0 !important;"}

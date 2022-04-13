@@ -9,6 +9,3 @@ J'avais en tête de créer un blog simple, léger et gratuitement ; j'ai trouvé
 [Minimal Mistakes](https://mademistakes.com/work/minimal-mistakes-jekyll-theme/). Vous pouvez
 consulter le code et la configuration du blog dans le dépôt
 [lfabreges/lfabreges.github.io](https://github.com/lfabreges/lfabreges.github.io).
-
-Pour la prochaine étape, je vais regarder du côté de [StackEdit](https://stackedit.io/) pour
-créer et éditer facilement les billets de blog.
