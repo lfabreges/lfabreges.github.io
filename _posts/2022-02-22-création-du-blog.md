@@ -1,6 +1,6 @@
 ---
 category: Développement
-date: 2022-02-22
+last_modified_at: 2022-04-13
 tags: [Blog, GitHub, Jekyll]
 title: "Création du blog"
 ---
