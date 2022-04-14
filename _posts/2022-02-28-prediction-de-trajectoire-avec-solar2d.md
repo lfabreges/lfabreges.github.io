@@ -139,7 +139,7 @@ end
 ```
 
 ## Lancement du projectile
-Lorsque le joueur relâche son doigt, le projectile est lancée.
+Lorsque le joueur relâche son doigt, le projectile est lancé.
 
 ```lua
 handleBallImpulseOnScreenTouch = function(event)
