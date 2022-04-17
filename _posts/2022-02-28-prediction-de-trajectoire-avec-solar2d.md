@@ -1,5 +1,6 @@
 ---
 category: Développement
+last_modified_at: 2022-04-17
 tags: [Solar2D]
 title: "Prédiction de trajectoire avec Solar2D"
 ---
@@ -73,9 +74,8 @@ J'utilise deux formules pour prédire la trajectoire du mon projectile ```scene.
 2. ```Distance parcourue du fait de la gravité = (Gravité * Temps²) / 2```
 
 ```lua
--- La valeur par défaut du ratio pixels par mètre utilisé par le moteur physique. Il est possible de
--- modifier cette valeur avec physics.setScale() mais pas de récupérer la valeur actuelle
-local scale = 30
+local fromMKS = physics.fromMKS
+local toMKS = physics.toMKS
 
 predictBallPathOnLateUpdate = function()
   if not ballImpulseForce then
@@ -112,10 +112,16 @@ predictBallPathOnLateUpdate = function()
     -- scene.ball.x : la position actuelle du projectile
     -- time * velocityX : la position future du projectile étant donné sa vitesse actuelle
     -- time * accelerationX : la position future du projectile étant donné son accelération
-    -- 0.5 * gravityX * scale * (time * time) : la distance parcourue du fait de la gravité
-    -- La gravité est multipliée par le ratio pixels par mètre car elle est exprimée en m/s
-    local stepX = scene.ball.x + time * velocityX + time * accelerationX + 0.5 * gravityX * scale * (time * time)
-    local stepY = scene.ball.y + time * velocityY + time * accelerationY + 0.5 * gravityY * scale * (time * time)
+    -- 0.5 * fromMKS("velocity", gravityX) * (time * time) : la distance parcourue du fait de la gravité
+    local stepX = scene.ball.x
+    stepX = stepX + time * velocityX
+    stepX = stepX + time * accelerationX
+    stepX = stepX + 0.5 * fromMKS("velocity", gravityX) * (time * time)
+
+    local stepY = scene.ball.y
+    stepY = stepY + time * velocityY
+    stepY = stepY + time * accelerationY
+    stepY = stepY + 0.5 * fromMKS("velocity", gravityY) * (time * time)
 
     -- Détection d'un éventuel obstacle entre ce point et le précédent
     if step > 0 and physics.rayCast(prevStepX, prevStepY, stepX, stepY, "any") then
@@ -148,7 +154,12 @@ handleBallImpulseOnScreenTouch = function(event)
     removePredictedBallPath()
 
     -- Impulsion sur le projectile en convertissant les pixels en mètres pour le moteur physique
-    scene.ball:applyLinearImpulse(_ballImpulseForce.x / scale, _ballImpulseForce.y / scale, scene.ball.x, scene.ball.y)
+    scene.ball:applyLinearImpulse(
+      toMKS("velocity", _ballImpulseForce.x),
+      toMKS("velocity", _ballImpulseForce.y),
+      scene.ball.x,
+      scene.ball.y
+    )
   end
 end
 ```
@@ -159,8 +170,9 @@ local composer = require "composer"
 local physics = require "physics"
 
 local ballImpulseForce = nil
-local scale = 30
+local fromMKS = physics.fromMKS
 local scene = composer.newScene()
+local toMKS = physics.toMKS
 
 local handleBallImpulseOnScreenTouch
 local predictBallPathOnLateUpdate
@@ -172,7 +184,13 @@ handleBallImpulseOnScreenTouch = function(event)
 
   if (event.phase == "ended") then
     removePredictedBallPath()
-    scene.ball:applyLinearImpulse(_ballImpulseForce.x / scale, _ballImpulseForce.y / scale, scene.ball.x, scene.ball.y)
+
+    scene.ball:applyLinearImpulse(
+      toMKS("velocity", _ballImpulseForce.x),
+      toMKS("velocity", _ballImpulseForce.y),
+      scene.ball.x,
+      scene.ball.y
+    )
   elseif (event.phase == "moved") then
     ballImpulseForce = _ballImpulseForce
   end
@@ -200,8 +218,16 @@ predictBallPathOnLateUpdate = function()
     local time = step * timeStepInterval
     local accelerationX = ballImpulseForce.x / scene.ball.mass
     local accelerationY = ballImpulseForce.y / scene.ball.mass
-    local stepX = scene.ball.x + time * velocityX + time * accelerationX + 0.5 * gravityX * scale * (time * time)
-    local stepY = scene.ball.y + time * velocityY + time * accelerationY + 0.5 * gravityY * scale * (time * time)
+
+    local stepX = scene.ball.x
+    stepX = stepX + time * velocityX
+    stepX = stepX + time * accelerationX
+    stepX = stepX + 0.5 * fromMKS("velocity", gravityX) * (time * time)
+
+    local stepY = scene.ball.y
+    stepY = stepY + time * velocityY
+    stepY = stepY + time * accelerationY
+    stepY = stepY + 0.5 * fromMKS("velocity", gravityY) * (time * time)
 
     if step > 0 and physics.rayCast(prevStepX, prevStepY, stepX, stepY, "any") then
       break
@@ -224,7 +250,6 @@ end
 function scene:create(event)
   physics.start()
   physics.pause()
-  physics.setScale(scale);
   physics.setGravity(0, 9.8)
 
   -- ...
