@@ -1,5 +1,3 @@
 main:
-  - title: "Lunoco"
-    url: /lunoco/
   - title: "Billets"
     url: /posts/
