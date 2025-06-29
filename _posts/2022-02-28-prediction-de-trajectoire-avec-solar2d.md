@@ -1,5 +1,5 @@
 ---
-category: Développement
+category: Développement logiciel
 last_modified_at: 2022-04-17
 tags: [Solar2D]
 title: "Prédiction de trajectoire avec Solar2D"

@@ -1,5 +1,5 @@
 ---
-category: Développement  
+category: Développement logiciel
 tags: [GitHub, Jeu, Snake]  
 title: "Après Tetris, découvrez Snake pour renforcer la vision binoculaire"  
 ---

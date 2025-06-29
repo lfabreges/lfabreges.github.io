@@ -1,5 +1,5 @@
 ---
-category: Développement
+category: Développement logiciel
 tags: [Jeu, Lunoco, Solar2D]
 style: >
   .app-store-img {

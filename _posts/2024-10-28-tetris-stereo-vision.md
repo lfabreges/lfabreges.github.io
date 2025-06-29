@@ -1,5 +1,5 @@
 ---
-category: Développement  
+category: Développement logiciel
 tags: [GitHub, Jeu, Tetris]  
 title: "Jouer à Tetris pour renforcer la vision binoculaire"  
 ---

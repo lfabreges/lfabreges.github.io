@@ -1,5 +1,5 @@
 ---
-category: Développement
+category: Développement logiciel
 tags: [GitHub, Jeu, Lunoco, Solar2D]
 title: "Ouverture du code source de Lunoco"
 ---
