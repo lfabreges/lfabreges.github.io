@@ -62,11 +62,11 @@ defaults:
 footer:
   links:
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
+      icon: "fa-fw fa-brands fa-linkedin"
       url: "https://www.linkedin.com/in/lfabreges"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/lfabreges"
+    - label: "X"
+      icon: "fa-fw fa-brands fa-square-x-twitter"
+      url: "https://x.com/lfabreges"
 
 include:
   - _pages
