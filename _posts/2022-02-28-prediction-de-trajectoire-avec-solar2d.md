@@ -1,7 +1,7 @@
 ---
-category: Développement logiciel
+category: developpement-logiciel
 last_modified_at: 2022-04-17
-tags: [Solar2D]
+tags: [solar-2d]
 title: "Prédiction de trajectoire avec Solar2D"
 ---
 Je crée en ce moment un jeu avec mon fils en m'appuyant sur [Solar 2D](https://solar2d.com/) ; un jeu pour

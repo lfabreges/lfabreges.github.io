@@ -1,6 +1,6 @@
 ---
-category: Développement personnel
-tags: [Écriture, Flow, Psychologie]  
+category: developpement-personnel
+tags: [ecriture, flow, psychologie]  
 title: "Let it flow : écrire pour accéder à ses automatismes"  
 ---
 

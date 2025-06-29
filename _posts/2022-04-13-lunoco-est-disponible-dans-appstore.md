@@ -1,6 +1,6 @@
 ---
-category: Développement logiciel
-tags: [Jeu, Lunoco, Solar2D]
+category: developpement-logiciel
+tags: [jeu, lunoco, solar-2d]
 style: >
   .app-store-img {
     border-radius: 13px;

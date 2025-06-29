@@ -1,7 +1,7 @@
 ---
-category: Développement logiciel
+category: developpement-logiciel
 last_modified_at: 2022-04-13
-tags: [Blog, GitHub, Jekyll]
+tags: [blog, github, jekyll]
 title: "Création du blog"
 ---
 J'avais en tête de créer un blog simple, léger et gratuitement ; j'ai trouvé mon bonheur avec
